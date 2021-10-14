@@ -1,2 +1,0 @@
-# TheHaunt
-My Unity Game

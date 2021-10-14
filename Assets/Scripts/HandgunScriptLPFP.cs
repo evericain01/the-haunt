@@ -11,6 +11,11 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Main gun camera
 	public Camera gunCamera;
 
+	[Header("Crosshair")]
+	public Texture2D crosshair;
+
+	public Rect position;
+
 	[Header("Gun Camera Options")]
 	//How fast the camera field of view changes when aiming 
 	[Tooltip("How fast the camera field of view changes when aiming.")]
@@ -163,9 +168,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 	[Header("UI Components")]
 	public Text timescaleText;
-	public Text currentWeaponText;
 	public Text currentAmmoText;
-	public Text totalAmmoText;
+	/*public Text totalAmmoText;*/
 
 	[System.Serializable]
 	public class prefabs
@@ -299,10 +303,10 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	private void Start () {
 		//Save the weapon name
 		storedWeaponName = weaponName;
-		//Get weapon name from string to text
-		currentWeaponText.text = weaponName;
+/*		//Get weapon name from string to text
+		currentWeaponText.text = weaponName;*/
 		//Set total ammo text from total ammo int
-		totalAmmoText.text = ammo.ToString();
+/*		totalAmmoText.text = ammo.ToString();*/
 
 		//Weapon sway
 		initialSwayPosition = transform.localPosition;
@@ -329,12 +333,21 @@ public class HandgunScriptLPFP : MonoBehaviour {
 				initialSwayPosition, Time.deltaTime * swaySmoothValue);
 		}
 	}
-	
+
+	void OnGUI()
+	{
+		GUI.DrawTexture(position, crosshair);
+	}
+
 	private void Update () {
+
+
+		position = new Rect((Screen.width - crosshair.width) / 2, (Screen.height - crosshair.height) / 2, crosshair.width, crosshair.height);
+
 
 		//Aiming
 		//Toggle camera FOV when right click is held down
-		if(Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting) 
+		if (Input.GetButton("Fire2") && !isReloading && !isRunning && !isInspecting) 
 		{
 			if (ironSights == true) 
 			{
@@ -471,11 +484,11 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		}
 
 		//Set current ammo text from ammo int
-		currentAmmoText.text = currentAmmo.ToString ();
+		currentAmmoText.text = currentAmmo.ToString();
 
 		//Continosuly check which animation 
 		//is currently playing
-		AnimationCheck ();
+		AnimationCheck();
 
 		//Play knife attack 1 animation when Q key is pressed
 		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
@@ -499,8 +512,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		//If out of ammo
 		if (currentAmmo == 0) 
 		{
-			//Show out of ammo text
-			currentWeaponText.text = "OUT OF AMMO";
+/*			//Show out of ammo text
+			currentWeaponText.text = "OUT OF AMMO";*/
 			//Toggle bool
 			outOfAmmo = true;
 			//Auto reload if true
@@ -516,8 +529,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
-			//When ammo is full, show weapon name again
-			currentWeaponText.text = storedWeaponName.ToString ();
+/*			//When ammo is full, show weapon name again
+			currentWeaponText.text = storedWeaponName.ToString ();*/
 			//Toggle bool
 			outOfAmmo = false;
 			//anim.SetBool ("Out Of Ammo", false);
