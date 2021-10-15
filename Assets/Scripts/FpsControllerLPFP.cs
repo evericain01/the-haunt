@@ -85,6 +85,7 @@ namespace FPSControllerLPFP
             _velocityZ = new SmoothVelocity();
             Cursor.lockState = CursorLockMode.Locked;
             ValidateRotationRestriction();
+
         }
 			
         private Transform AssignCharactersCamera()
