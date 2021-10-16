@@ -10,6 +10,8 @@ namespace FPSControllerLPFP
     [RequireComponent(typeof(AudioSource))]
     public class FpsControllerLPFP : MonoBehaviour
     {
+        public static int scoreCounter = 1;
+
 #pragma warning disable 649
 		[Header("Arms")]
         [Tooltip("The transform component that holds the gun camera."), SerializeField]

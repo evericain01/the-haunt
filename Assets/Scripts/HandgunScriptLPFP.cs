@@ -126,6 +126,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Check if out of ammo
 	private bool outOfAmmo;
 
+	public Transform bullet;
+
+
 	[Header("Bullet Settings")]
 	//Bullet
 	[Tooltip("How much force is applied to the bullet when shooting.")]
@@ -137,7 +140,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	public SkinnedMeshRenderer bulletInMagRenderer;
 
 	[Header("Grenade Settings")]
-	public float grenadeSpawnDelay = 0.35f;
+/*	public float grenadeSpawnDelay = 0.35f;*/
 
 	[Header("Muzzleflash Settings")]
 	public bool randomMuzzleflash = false;
@@ -177,7 +180,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		[Header("Prefabs")]
 		public Transform bulletPrefab;
 		public Transform casingPrefab;
-		public Transform grenadePrefab;
+		/*public Transform grenadePrefab;*/
 	}
 	public prefabs Prefabs;
 	
@@ -191,7 +194,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		//Bullet prefab spawn from this point
 		public Transform bulletSpawnPoint;
 		//Grenade prefab spawn from this point
-		public Transform grenadeSpawnPoint;
+		/*public Transform grenadeSpawnPoint;*/
 	}
 	public spawnpoints Spawnpoints;
 
@@ -490,7 +493,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		//is currently playing
 		AnimationCheck();
 
-		//Play knife attack 1 animation when Q key is pressed
+/*		//Play knife attack 1 animation when Q key is pressed
 		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
 		{
 			anim.Play ("Knife Attack 1", 0, 0f);
@@ -499,15 +502,15 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.F) && !isInspecting) 
 		{
 			anim.Play ("Knife Attack 2", 0, 0f);
-		}
+		}*/
 			
 		//Throw grenade when pressing G key
-		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
+/*		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
 		{
 			StartCoroutine (GrenadeSpawnDelay ());
 			//Play grenade throw animation
 			anim.Play("GrenadeThrow", 0, 0.0f);
-		}
+		}*/
 
 		//If out of ammo
 		if (currentAmmo == 0) 
@@ -618,31 +621,34 @@ public class HandgunScriptLPFP : MonoBehaviour {
 					}
 				}
 			}
-				
-			//Spawn bullet at bullet spawnpoint
-			var bullet = (Transform)Instantiate (
-				Prefabs.bulletPrefab,
-				Spawnpoints.bulletSpawnPoint.transform.position,
-				Spawnpoints.bulletSpawnPoint.transform.rotation);
+
+            //Spawn bullet at bullet spawnpoint
+            bullet = (Transform)Instantiate(
+                Prefabs.bulletPrefab,
+                Spawnpoints.bulletSpawnPoint.transform.position,
+                Spawnpoints.bulletSpawnPoint.transform.rotation);
 
 			//Add velocity to the bullet
-			bullet.GetComponent<Rigidbody>().velocity = 
-			bullet.transform.forward * bulletForce;
+			bullet.gameObject.tag = "bullet";
+            bullet.GetComponent<Rigidbody>().velocity =
+            bullet.transform.forward * bulletForce;
 
-			//Spawn casing prefab at spawnpoint
-			Instantiate (Prefabs.casingPrefab, 
-				Spawnpoints.casingSpawnPoint.transform.position, 
-				Spawnpoints.casingSpawnPoint.transform.rotation);
-		}
+            //Spawn casing prefab at spawnpoint
+            Instantiate(Prefabs.casingPrefab,
+                Spawnpoints.casingSpawnPoint.transform.position,
+                Spawnpoints.casingSpawnPoint.transform.rotation);
+
+
+        }
 
 		//Inspect weapon when pressing T key
-		if (Input.GetKeyDown (KeyCode.T)) 
+/*		if (Input.GetKeyDown (KeyCode.T)) 
 		{
 			anim.SetTrigger ("Inspect");
-		}
+		}*/
 
 		//Toggle weapon holster when pressing E key
-		if (Input.GetKeyDown (KeyCode.E) && !hasBeenHolstered) 
+/*		if (Input.GetKeyDown (KeyCode.E) && !hasBeenHolstered) 
 		{
 			holstered = true;
 
@@ -669,7 +675,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		else 
 		{
 			anim.SetBool ("Holster", false);
-		}
+		}*/
 
 		//Reload 
 		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
@@ -711,7 +717,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		}
 	}
 
-	private IEnumerator HandgunSliderBackDelay () {
+
+    private IEnumerator HandgunSliderBackDelay () {
 		//Wait set amount of time
 		yield return new WaitForSeconds (sliderBackTimer);
 		//Set slider back
@@ -722,14 +729,14 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		hasStartedSliderBack = false;
 	}
 
-	private IEnumerator GrenadeSpawnDelay () {
+/*	private IEnumerator GrenadeSpawnDelay () {
 		//Wait for set amount of time before spawning grenade
 		yield return new WaitForSeconds (grenadeSpawnDelay);
 		//Spawn grenade prefab at spawnpoint
 		Instantiate(Prefabs.grenadePrefab, 
 			Spawnpoints.grenadeSpawnPoint.transform.position, 
 			Spawnpoints.grenadeSpawnPoint.transform.rotation);
-	}
+	}*/
 
 	private IEnumerator AutoReload () {
 
