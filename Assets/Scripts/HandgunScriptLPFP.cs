@@ -7,6 +7,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Animator component attached to weapon
 	Animator anim;
 
+	public GameObject reloadText;
+
 	[Header("Gun Camera")]
 	//Main gun camera
 	public Camera gunCamera;
@@ -524,7 +526,11 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			{
 				StartCoroutine (AutoReload ());
 			}
-				
+
+
+			reloadText = GameObject.Find("ReloadText");
+			reloadText.GetComponent<Text>().text = "\"R\" to Reload";
+
 			//Set slider back
 			anim.SetBool ("Out Of Ammo Slider", true);
 			//Increase layer weight for blending to slider back pose
@@ -630,6 +636,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 			//Add velocity to the bullet
 			bullet.gameObject.tag = "bullet";
+			/*BoxCollider collider = bullet.gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;*/
             bullet.GetComponent<Rigidbody>().velocity =
             bullet.transform.forward * bulletForce;
 
@@ -682,6 +689,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			//Reload
 			Reload ();
+
+            reloadText = GameObject.Find("ReloadText");
+            reloadText.GetComponent<Text>().text = "";
 
 			if (!hasStartedSliderBack) 
 			{

@@ -11,14 +11,14 @@ public class ScoreTracker : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "bullet" && !hasEntered)
-        {
+        if (collision.gameObject.tag.Equals("bullet") && !hasEntered)
             hasEntered = true;
-            int counter = FPSControllerLPFP.FpsControllerLPFP.scoreCounter++;
-            GameObject textScoreDisplay = GameObject.Find("ScoreText");
-            textScoreDisplay.GetComponent<Text>().text = "Score: " + counter.ToString();
-
+            this.GetComponent<Renderer>().material.color = Color.red;
+            int counter = FPSControllerLPFP.FpsControllerLPFP.scoreCounter--;
+            textScoreDisplay = GameObject.Find("ScoreText");
+            textScoreDisplay.GetComponent<Text>().text = "Balloons Left: " + counter.ToString();
+            Destroy(this);
         }
-    }
-
 }
+
+

@@ -10,7 +10,7 @@ namespace FPSControllerLPFP
     [RequireComponent(typeof(AudioSource))]
     public class FpsControllerLPFP : MonoBehaviour
     {
-        public static int scoreCounter = 1;
+        public static int scoreCounter = 29;
 
 #pragma warning disable 649
 		[Header("Arms")]
