@@ -34,9 +34,10 @@ public class TimerCountdown : MonoBehaviour
         else
         {
             textDisplay.GetComponent<Text>().text = secondsLeft.ToString();
-            
+
         }
         takingAway = false;
 
     }
+
 }

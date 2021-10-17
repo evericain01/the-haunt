@@ -13,8 +13,14 @@ public class ScoreTracker : MonoBehaviour
     {
         if (collision.gameObject.tag.Equals("bullet") && !hasEntered)
             hasEntered = true;
+
+            // Changing balloon color to red.
             this.GetComponent<Renderer>().material.color = Color.red;
+
+            // Updating the score.
             int counter = FPSControllerLPFP.FpsControllerLPFP.scoreCounter--;
+
+            // Setting the score onto canvas UI text.
             textScoreDisplay = GameObject.Find("ScoreText");
             textScoreDisplay.GetComponent<Text>().text = "Balloons Left: " + counter.ToString();
             Destroy(this);

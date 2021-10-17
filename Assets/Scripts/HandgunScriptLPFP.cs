@@ -636,7 +636,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 			//Add velocity to the bullet
 			bullet.gameObject.tag = "bullet";
-			/*BoxCollider collider = bullet.gameObject.AddComponent(typeof(BoxCollider)) as BoxCollider;*/
             bullet.GetComponent<Rigidbody>().velocity =
             bullet.transform.forward * bulletForce;
 

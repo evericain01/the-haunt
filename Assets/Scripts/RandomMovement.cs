@@ -20,8 +20,6 @@ public class RandomMovement : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-
         x = Random.Range(-velocidadMax, velocidadMax);
         z = Random.Range(-velocidadMax, velocidadMax);
         angulo = Mathf.Atan2(x, z) * (180 / 3.141592f) + 90;
@@ -62,7 +60,6 @@ public class RandomMovement : MonoBehaviour
             transform.localRotation = Quaternion.Euler(0, angulo, 0);
             tiempo = 0.0f;
         }
-
 
         if (tiempo > 1.0f)
         {
