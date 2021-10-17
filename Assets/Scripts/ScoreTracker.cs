@@ -17,7 +17,7 @@ public class ScoreTracker : MonoBehaviour
             int counter = FPSControllerLPFP.FpsControllerLPFP.scoreCounter++;
             GameObject textScoreDisplay = GameObject.Find("ScoreText");
             textScoreDisplay.GetComponent<Text>().text = "Score: " + counter.ToString();
-            
+
         }
     }
 
