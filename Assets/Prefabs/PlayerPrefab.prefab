@@ -5973,7 +5973,7 @@ MonoBehaviour:
   autoReloadDelay: 0.25
   ammo: 9
   bullet: {fileID: 4833035398139372, guid: eddd5dbbd5cba0343953e804ef2e05c8, type: 3}
-  bulletForce: 300
+  bulletForce: 400
   showBulletInMagDelay: 0.6
   bulletInMagRenderer: {fileID: 7238208793801070757}
   randomMuzzleflash: 1
@@ -6016,7 +6016,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.617
+  m_Volume: 0.089
   m_Pitch: 0.98
   Loop: 0
   Mute: 0
@@ -6112,7 +6112,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 38b450e2adcb6f542acc8c1d423bd8dc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.355
+  m_Volume: 0.123
   m_Pitch: 1.35
   Loop: 0
   Mute: 0
@@ -7534,8 +7534,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 1
+  m_Volume: 0.244
+  m_Pitch: 0.75
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -7634,10 +7634,10 @@ MonoBehaviour:
   armPosition: {x: 0, y: 0, z: 0}
   walkingSound: {fileID: 8300000, guid: 5ac86ac5747770349a6c124f36d233e1, type: 3}
   runningSound: {fileID: 8300000, guid: 8a49c532c25ef274781a01f02cd8b425, type: 3}
-  walkingSpeed: 7.23
-  runningSpeed: 11.15
+  walkingSpeed: 8.63
+  runningSpeed: 13.58
   movementSmoothness: 0.3
-  jumpForce: 45.09
+  jumpForce: 46.4
   mouseSensitivity: 9.43
   rotationSmoothness: 0.05
   minVerticalAngle: -90

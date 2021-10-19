@@ -107,10 +107,10 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Check if reloading
 	private bool isReloading;
 
-	//Holstering weapon
+/*	//Holstering weapon
 	private bool hasBeenHolstered = false;
 	//If weapon is holstered
-	private bool holstered;
+	private bool holstered;*/
 	//Check if running
 	private bool isRunning;
 	//Check if aiming
@@ -456,7 +456,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
 
-		//Timescale settings
+/*		//Timescale settings
 		//Change timescale to normal when 1 key is pressed
 		if (Input.GetKeyDown (KeyCode.Alpha1)) 
 		{
@@ -486,7 +486,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		{
 			Time.timeScale = 0.0f;
 			timescaleText.text = "0.0";
-		}
+		}*/
 
 		//Set current ammo text from ammo int
 		currentAmmoText.text = currentAmmo.ToString();

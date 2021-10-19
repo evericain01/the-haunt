@@ -223,6 +223,8 @@ RectTransform:
   - {fileID: 699905650}
   - {fileID: 1156776748}
   - {fileID: 303289471}
+  - {fileID: 1416980949}
+  - {fileID: 2033116167}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -244,9 +246,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -334,9 +384,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -424,9 +522,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -519,9 +665,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -609,9 +803,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -646,7 +888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.52
+      value: 2.36
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -778,9 +1020,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -868,9 +1158,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -958,9 +1296,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1058,9 +1444,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1148,9 +1582,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1248,9 +1730,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1406,9 +1936,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1496,9 +2074,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1533,7 +2159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.62
+      value: 2.72
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1588,6 +2214,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
   m_PrefabInstance: {fileID: 463897769}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &617557363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617557366}
+  - component: {fileID: 617557365}
+  - component: {fileID: 617557364}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &617557364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617557363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &617557365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617557363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &617557366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617557363}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &636274211 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
@@ -1764,9 +2456,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -1854,9 +2594,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2158,9 +2946,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2248,9 +3084,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2285,7 +3169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.46
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2417,9 +3301,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2450,15 +3382,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 84.07
+      value: 72.9
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.46
+      value: 12.57
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -53.223083
+      value: -18.03
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2507,9 +3439,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2602,9 +3582,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2635,7 +3663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.04
+      value: 17.653
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2643,7 +3671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -52.753
+      value: -42.77
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2692,9 +3720,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2782,9 +3858,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2864,6 +3988,85 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+--- !u!1 &1416980948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1416980949}
+  - component: {fileID: 1416980951}
+  - component: {fileID: 1416980950}
+  m_Layer: 0
+  m_Name: NextLevelText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1416980949
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416980948}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.38586, y: 0.38586, z: 0.38586}
+  m_Children: []
+  m_Father: {fileID: 45533071}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0032196, y: 101}
+  m_SizeDelta: {x: 2957.4, y: 127.8931}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1416980950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416980948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6b8edac99cb089046a191096dcf045b9, type: 3}
+    m_FontSize: 109
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 109
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
+    m_LineSpacing: 1
+  m_Text: 'Next Level Starts in:'
+--- !u!222 &1416980951
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416980948}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1469017405
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2872,9 +4075,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2962,9 +4213,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -2999,7 +4298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.15
+      value: 3.26
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3229,9 +4528,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3319,9 +4666,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3414,9 +4809,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3509,9 +4952,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3609,9 +5100,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3779,9 +5318,57 @@ PrefabInstance:
     m_TransformParent: {fileID: 1010197006}
     m_Modifications:
     - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: gunIcon
+      value: 
+      objectReference: {fileID: 1932372274}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: reloadText
+      value: 
+      objectReference: {fileID: 303289470}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: ammoDivider
+      value: 
+      objectReference: {fileID: 1653114642}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: secondsLeft
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: timeLeftText
+      value: 
+      objectReference: {fileID: 699905649}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: countDownText
+      value: 
+      objectReference: {fileID: 1156776745}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelText
+      value: 
+      objectReference: {fileID: 1416980948}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: totalAmmoText
+      value: 
+      objectReference: {fileID: 647848084}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentAmmotext
+      value: 
+      objectReference: {fileID: 2014922547}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: currentLevelText
+      value: 
+      objectReference: {fileID: 549473471}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: scoreDisplayText
+      value: 
+      objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: textScoreDisplay
       value: 
       objectReference: {fileID: 948814438}
+    - target: {fileID: 3043051835900405199, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+      propertyPath: nextLevelCountDownText
+      value: 
+      objectReference: {fileID: 2033116166}
     - target: {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: xMax
       value: 5
@@ -3940,6 +5527,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014922547}
   m_CullTransparentMesh: 1
+--- !u!1 &2033116166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2033116167}
+  - component: {fileID: 2033116169}
+  - component: {fileID: 2033116168}
+  m_Layer: 0
+  m_Name: NextLevelCountDownText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2033116167
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033116166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 45533071}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0028229, y: -27.033}
+  m_SizeDelta: {x: 1141.1, y: 128.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2033116168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033116166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 6b8edac99cb089046a191096dcf045b9, type: 3}
+    m_FontSize: 66
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 66
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 0
+--- !u!222 &2033116169
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033116166}
+  m_CullTransparentMesh: 1
 --- !u!4 &2045917434 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
@@ -3975,6 +5641,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1156776745}
+  nextLevelText: {fileID: 1416980948}
+  nextLevelCountDownText: {fileID: 2033116166}
   secondsLeft: 100
   takingAway: 0
 --- !u!4 &2059421188
@@ -4070,6 +5738,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7209381675833760859, guid: 2fa01001cfde9e2478a9d87b262daab7, type: 3}
+      propertyPath: mouseSensitivity
+      value: 10.6
+      objectReference: {fileID: 0}
     - target: {fileID: 7210142776492142285, guid: 2fa01001cfde9e2478a9d87b262daab7, type: 3}
       propertyPath: reloadText
       value: 

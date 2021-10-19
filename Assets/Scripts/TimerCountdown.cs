@@ -6,11 +6,16 @@ using UnityEngine.UI;
 public class TimerCountdown : MonoBehaviour
 {
     public GameObject textDisplay;
+    public GameObject nextLevelText;
+    public GameObject nextLevelCountDownText;
     public int secondsLeft = 30;
     public bool takingAway = false;
 
     private void Start()
     {
+        nextLevelText.SetActive(false);
+        nextLevelCountDownText.SetActive(false);
+
         textDisplay.GetComponent<Text>().text = secondsLeft.ToString();
     }
 

@@ -17,15 +17,8 @@ public class ScoreTrackerScene2 : MonoBehaviour
             hasEntered = true;
 
             // Updating the score.
-            int counter = FPSControllerLPFP.FpsControllerLPFP.skullScoreCounter;
+            int counter = FPSControllerLPFP.FpsControllerLPFP.skullScoreCounter--;
             Debug.Log("Counter: " + counter);
-
-/*            Debug.Log("Counter: " + counter);
-
-            if (counter == 0)
-            {
-                SceneManager.LoadScene("Scene2");
-            }*/
 
             // Changing balloon color to red.
             this.GetComponent<Renderer>().material.color = Color.gray;
@@ -34,7 +27,6 @@ public class ScoreTrackerScene2 : MonoBehaviour
             // Setting the score onto canvas UI text.
             textScoreDisplay = GameObject.Find("ScoreText");
             textScoreDisplay.GetComponent<Text>().text = "Skulls Left: " + counter.ToString();
-            Destroy(this);
         }
 
     }
