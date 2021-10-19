@@ -34,6 +34,7 @@ public class TimerCountdown : MonoBehaviour
         secondsLeft -= 1;
         if (secondsLeft < 10)
         {
+            
             textDisplay.GetComponent<Text>().text = secondsLeft.ToString();
         }
         else

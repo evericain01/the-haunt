@@ -27,10 +27,10 @@ public class SceneSwitch : MonoBehaviour
 
     private void Update()
     {
-        if (takingAway == false && secondsLeft > 0)
+/*        if (takingAway == false && secondsLeft > 0)
         {
             StartCoroutine(TimerTake());
-        }
+        }*/
     }
 
     public void SceneSwitcher()
@@ -59,6 +59,7 @@ public class SceneSwitch : MonoBehaviour
 
         if (takingAway == false && secondsLeft > 0)
         {
+            Debug.Log("Seconds Left: " + secondsLeft);
             StartCoroutine(TimerTake());
         }
 
@@ -78,6 +79,7 @@ public class SceneSwitch : MonoBehaviour
         secondsLeft -= 1;
         if (secondsLeft < 10)
         {
+            
             nextLevelCountDownText.GetComponent<Text>().text = secondsLeft.ToString();
         }
         else

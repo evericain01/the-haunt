@@ -14,6 +14,7 @@ public class ScoreTrackerScene1 : MonoBehaviour
     public bool takingAway = false;
 
 
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag.Equals("bullet") && !hasEntered)
