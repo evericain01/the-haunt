@@ -12,8 +12,7 @@ public class ScoreTrackerScene1 : MonoBehaviour
     private bool hasEntered;
     public GameObject scoreDisplayText;
     public bool takingAway = false;
-
-
+    int counter = -1;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -22,7 +21,7 @@ public class ScoreTrackerScene1 : MonoBehaviour
             hasEntered = true;
 
             // Updating the score.
-            int counter = FPSControllerLPFP.FpsControllerLPFP.ballonScoreCounter--;
+            counter = FPSControllerLPFP.FpsControllerLPFP.ballonScoreCounter--;
 
             // Changing balloon color to red.
             this.GetComponent<Renderer>().material.color = Color.red;
@@ -30,13 +29,16 @@ public class ScoreTrackerScene1 : MonoBehaviour
             // Setting the score onto canvas UI text.
             scoreDisplayText.GetComponent<Text>().text = "Balloons Left: " + counter.ToString();
 
-            if (counter == 0)
-            {
-                GameObject.Find("SceneSwitcher").GetComponent<SceneSwitch>().SceneSwitcher();
-            }
-
         }
 
+    }
+
+    private void Update()
+    {
+        if (counter == 0)
+        {
+            GameObject.Find("SceneSwitcher").GetComponent<SceneSwitch>().SceneSwitcher();
+        }
     }
 }
 
