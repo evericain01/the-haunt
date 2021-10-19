@@ -6,7 +6,7 @@ using System;
 public class Float : MonoBehaviour
 {
     float originalY;
-    public float floatStrength = 1; 
+    public float floatStrength; 
 
     void Start()
     {
