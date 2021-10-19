@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class ScoreTrackerScene2 : MonoBehaviour
 {
     public GameObject textScoreDisplay;
-
     private bool hasEntered;
 
     private void OnCollisionEnter(Collision collision)
@@ -22,7 +21,6 @@ public class ScoreTrackerScene2 : MonoBehaviour
 
             // Changing balloon color to red.
             this.GetComponent<Renderer>().material.color = Color.gray;
-
 
             // Setting the score onto canvas UI text.
             textScoreDisplay = GameObject.Find("ScoreText");

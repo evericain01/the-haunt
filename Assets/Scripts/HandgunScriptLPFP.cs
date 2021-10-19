@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class HandgunScriptLPFP : MonoBehaviour {
 
 	//Animator component attached to weapon
-	Animator anim;
+	public Animator anim;
 
 	public GameObject reloadText;
 

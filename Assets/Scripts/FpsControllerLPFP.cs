@@ -62,7 +62,7 @@ namespace FPSControllerLPFP
 
         private Rigidbody _rigidbody;
         private CapsuleCollider _collider;
-        private AudioSource _audioSource;
+        public AudioSource _audioSource;
         private SmoothRotation _rotationX;
         private SmoothRotation _rotationY;
         private SmoothVelocity _velocityX;

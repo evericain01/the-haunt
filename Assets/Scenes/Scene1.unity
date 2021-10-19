@@ -2586,6 +2586,62 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5483110091768067907, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
+--- !u!1 &794563511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794563513}
+  - component: {fileID: 794563512}
+  m_Layer: 0
+  m_Name: SceneSwitcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &794563512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794563511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 693896fd494fed34e80f776b4abf5977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreDisplayText: {fileID: 948814438}
+  currentAmmotext: {fileID: 2014922547}
+  ammoDivider: {fileID: 1653114642}
+  totalAmmoText: {fileID: 647848084}
+  gunIcon: {fileID: 1932372274}
+  currentLevelText: {fileID: 549473471}
+  timeLeftText: {fileID: 699905649}
+  countDownText: {fileID: 1156776745}
+  reloadText: {fileID: 303289470}
+  nextLevelText: {fileID: 1416980948}
+  nextLevelCountDownText: {fileID: 2033116166}
+  secondsLeft: 5
+  takingAway: 0
+--- !u!4 &794563513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794563511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -472.23187, y: 35.65395, z: -378.8025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &802679860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4298,11 +4354,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.26
+      value: 6.23
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.21
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 7285855824821305544, guid: 8e1f1312231232d4fbd77ae28bd4a19f, type: 3}
       propertyPath: m_LocalRotation.w
