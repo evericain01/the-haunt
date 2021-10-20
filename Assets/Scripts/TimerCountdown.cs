@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class TimerCountdown : MonoBehaviour
@@ -8,6 +9,7 @@ public class TimerCountdown : MonoBehaviour
     public GameObject textDisplay;
     public GameObject nextLevelText;
     public GameObject nextLevelCountDownText;
+
     public int secondsLeft = 30;
     public bool takingAway = false;
 
@@ -24,6 +26,11 @@ public class TimerCountdown : MonoBehaviour
         if (takingAway == false && secondsLeft > 0)
         {
             StartCoroutine(TimerTake());
+        }
+
+        if (secondsLeft == 0)
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 
@@ -43,7 +50,5 @@ public class TimerCountdown : MonoBehaviour
 
         }
         takingAway = false;
-
     }
-
 }

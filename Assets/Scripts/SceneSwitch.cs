@@ -25,14 +25,6 @@ public class SceneSwitch : MonoBehaviour
     public int secondsLeft = 5;
     public bool takingAway = false;
 
-    private void Update()
-    {
-/*        if (takingAway == false && secondsLeft > 0)
-        {
-            StartCoroutine(TimerTake());
-        }*/
-    }
-
     public void SceneSwitcher()
     {
         GameObject.Find("Player").GetComponent<FPSControllerLPFP.FpsControllerLPFP>().enabled = false;
@@ -67,7 +59,7 @@ public class SceneSwitch : MonoBehaviour
     IEnumerator DelayToNextScene()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Scene2");
+        SceneManager.LoadScene("Level2");
     }
 
     IEnumerator TimerTake()

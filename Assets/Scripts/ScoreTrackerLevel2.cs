@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class ScoreTrackerScene2 : MonoBehaviour
+public class ScoreTrackerLevel2 : MonoBehaviour
 {
     public GameObject textScoreDisplay;
     private bool hasEntered;
-
+    
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag.Equals("bullet") && !hasEntered)

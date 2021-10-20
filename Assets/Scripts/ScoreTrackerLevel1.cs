@@ -7,7 +7,7 @@ using UnityEditor;
 using System;
 using System.Reflection;
 
-public class ScoreTrackerScene1 : MonoBehaviour
+public class ScoreTrackerLevel1 : MonoBehaviour
 {
     private bool hasEntered;
     public GameObject scoreDisplayText;
