@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44243467, g: 0.49150223, b: 0.5713545, a: 1}
+  m_IndirectSpecularColor: {r: 0.44243503, g: 0.49150288, b: 0.57135546, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -519,7 +519,7 @@ GameObject:
   - component: {fileID: 346102983}
   - component: {fileID: 346102982}
   m_Layer: 0
-  m_Name: Canvas
+  m_Name: HUD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1872,6 +1872,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1126468859, guid: addd792eb7c07c741abbc4a18765ed46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -174.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594259389, guid: addd792eb7c07c741abbc4a18765ed46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -178.9
+      objectReference: {fileID: 0}
     - target: {fileID: 938274698200885590, guid: addd792eb7c07c741abbc4a18765ed46, type: 3}
       propertyPath: m_Name
       value: SecondMap

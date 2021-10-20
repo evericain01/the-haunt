@@ -40,8 +40,6 @@ public class SceneSwitch : MonoBehaviour
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().enabled = false;
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().anim.enabled = false;
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().crosshair = new Texture2D(0, 0);
-        SetAmbientOcclusion(1000.0f);
-        SetIndirectResolution(1000.0f);
 
         scoreDisplayText.SetActive(false);
         currentAmmotext.SetActive(false);
@@ -88,50 +86,5 @@ public class SceneSwitch : MonoBehaviour
         }
         takingAway = false;
 
-    }
-
-    public static void SetIndirectResolution(float val)
-    {
-        SetFloat("m_LightmapEditorSettings.m_Resolution", val);
-    }
-
-    public static void SetAmbientOcclusion(float val)
-    {
-        SetFloat("m_LightmapEditorSettings.m_CompAOExponent", val);
-    }
-
-
-    public static void SetFloat(string name, float val)
-    {
-        ChangeProperty(name, property => property.floatValue = val);
-    }
-
-    public static void SetInt(string name, int val)
-    {
-        ChangeProperty(name, property => property.intValue = val);
-    }
-
-    public static void SetBool(string name, bool val)
-    {
-        ChangeProperty(name, property => property.boolValue = val);
-    }
-
-    public static void ChangeProperty(string name, Action<SerializedProperty> changer)
-    {
-        var lightmapSettings = getLighmapSettings();
-        var prop = lightmapSettings.FindProperty(name);
-        if (prop != null)
-        {
-            changer(prop);
-            lightmapSettings.ApplyModifiedProperties();
-        }
-        else Debug.LogError("lighmap property not found: " + name);
-    }
-
-    static SerializedObject getLighmapSettings()
-    {
-        var getLightmapSettingsMethod = typeof(LightmapEditorSettings).GetMethod("GetLightmapSettings", BindingFlags.Static | BindingFlags.NonPublic);
-        var lightmapSettings = getLightmapSettingsMethod.Invoke(null, null) as UnityEngine.Object;
-        return new SerializedObject(lightmapSettings);
     }
 }
