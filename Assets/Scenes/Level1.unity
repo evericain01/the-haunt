@@ -5707,7 +5707,7 @@ MonoBehaviour:
   textDisplay: {fileID: 1156776745}
   nextLevelText: {fileID: 1416980948}
   nextLevelCountDownText: {fileID: 2033116166}
-  secondsLeft: 5
+  secondsLeft: 100
   takingAway: 0
 --- !u!4 &2059421188
 Transform:
