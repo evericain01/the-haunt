@@ -30,6 +30,7 @@ public class TimerCountdown : MonoBehaviour
 
         if (secondsLeft == 0)
         {
+            PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("GameOver");
         }
     }

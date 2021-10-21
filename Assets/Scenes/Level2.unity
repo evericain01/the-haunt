@@ -2113,7 +2113,7 @@ MonoBehaviour:
   textDisplay: {fileID: 2117911959}
   nextLevelText: {fileID: 913153990}
   nextLevelCountDownText: {fileID: 1604501393}
-  secondsLeft: 60
+  secondsLeft: 5
   takingAway: 0
 --- !u!4 &1663769358
 Transform:
