@@ -7487,10 +7487,10 @@ MonoBehaviour:
   armPosition: {x: 0, y: 0, z: 0}
   walkingSound: {fileID: 8300000, guid: 5ac86ac5747770349a6c124f36d233e1, type: 3}
   runningSound: {fileID: 8300000, guid: 8a49c532c25ef274781a01f02cd8b425, type: 3}
-  walkingSpeed: 8.63
-  runningSpeed: 13.58
+  walkingSpeed: 9.5
+  runningSpeed: 15.31
   movementSmoothness: 0.3
-  jumpForce: 46.4
+  jumpForce: 47.25
   mouseSensitivity: 10.6
   rotationSmoothness: 0.05
   minVerticalAngle: -90
