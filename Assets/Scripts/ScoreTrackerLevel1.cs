@@ -11,7 +11,7 @@ public class ScoreTrackerLevel1 : MonoBehaviour
 {
     private bool hasEntered;
     public GameObject scoreDisplayText;
-    int balloonCounter = 30;
+    int balloonCounter = 29;
 
     public AudioSource backGroundAudio;
 

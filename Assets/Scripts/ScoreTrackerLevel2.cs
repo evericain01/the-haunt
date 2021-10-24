@@ -8,7 +8,7 @@ public class ScoreTrackerLevel2 : MonoBehaviour
 {
     public GameObject textScoreDisplay;
     private bool hasEntered;
-    int skullCounter = 20;
+    int skullCounter = 19;
 
     public AudioSource backGroundAudio;
 
