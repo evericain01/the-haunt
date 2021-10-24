@@ -11,8 +11,9 @@ public class ScoreTrackerLevel1 : MonoBehaviour
 {
     private bool hasEntered;
     public GameObject scoreDisplayText;
-    public bool takingAway = false;
-    int counter = -1;
+    int balloonCounter = 30;
+
+    public AudioSource backGroundAudio;
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -21,13 +22,13 @@ public class ScoreTrackerLevel1 : MonoBehaviour
             hasEntered = true;
 
             // Updating the score.
-            counter = FPSControllerLPFP.FpsControllerLPFP.ballonScoreCounter--;
+            balloonCounter = FPSControllerLPFP.FpsControllerLPFP.ballonScoreCounter--;
 
             // Changing balloon color to red.
             this.GetComponent<Renderer>().material.color = Color.red;
 
             // Setting the score onto canvas UI text.
-            scoreDisplayText.GetComponent<Text>().text = "Balloons Left: " + counter.ToString();
+            scoreDisplayText.GetComponent<Text>().text = "Balloons Left: " + balloonCounter.ToString();
 
         }
 
@@ -35,10 +36,14 @@ public class ScoreTrackerLevel1 : MonoBehaviour
 
     private void Update()
     {
-        if (counter == 0)
+        backGroundAudio = GameObject.Find("Timer").GetComponent<AudioSource>();
+
+        if (balloonCounter == 0)
         {
+            backGroundAudio.enabled = false;
             GameObject.Find("SceneSwitcher").GetComponent<SceneSwitch>().SceneSwitcher();
         }
+
     }
 }
 

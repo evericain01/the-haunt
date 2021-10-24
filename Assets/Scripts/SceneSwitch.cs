@@ -27,12 +27,14 @@ public class SceneSwitch : MonoBehaviour
 
     public void SceneSwitcher()
     {
+        // Stopping animations, movement and audio.
         GameObject.Find("Player").GetComponent<FPSControllerLPFP.FpsControllerLPFP>().enabled = false;
         GameObject.Find("Player").GetComponent<FPSControllerLPFP.FpsControllerLPFP>()._audioSource.Stop();
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().enabled = false;
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().anim.enabled = false;
         GameObject.Find("arms_handgun_04").GetComponent<HandgunScriptLPFP>().crosshair = new Texture2D(0, 0);
 
+        // Removing the current canvas text.
         scoreDisplayText.SetActive(false);
         currentAmmotext.SetActive(false);
         ammoDivider.SetActive(false);
@@ -43,6 +45,7 @@ public class SceneSwitch : MonoBehaviour
         countDownText.SetActive(false);
         reloadText.SetActive(false);
 
+        // Displaying new canvas text.
         nextLevelText.SetActive(true);
         nextLevelCountDownText.SetActive(true);
         nextLevelCountDownText.GetComponent<Text>().text = secondsLeft.ToString();
@@ -69,7 +72,6 @@ public class SceneSwitch : MonoBehaviour
         secondsLeft -= 1;
         if (secondsLeft < 10)
         {
-            
             nextLevelCountDownText.GetComponent<Text>().text = secondsLeft.ToString();
         }
         else

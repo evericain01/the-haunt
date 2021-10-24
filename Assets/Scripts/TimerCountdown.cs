@@ -28,11 +28,13 @@ public class TimerCountdown : MonoBehaviour
             StartCoroutine(TimerTake());
         }
 
+        // Prompting Game Over screen if there is no time left.
         if (secondsLeft == 0)
         {
             PlayerPrefs.SetString("lastLoadedScene", SceneManager.GetActiveScene().name);
             SceneManager.LoadScene("GameOver");
         }
+
     }
 
     IEnumerator TimerTake()

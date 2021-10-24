@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverController : MonoBehaviour
+public class EndScreenController : MonoBehaviour
 {
-    void Start()
+    private void Start()
     {
         // Resetting Score
         FPSControllerLPFP.FpsControllerLPFP.ballonScoreCounter = 30;
@@ -16,10 +16,9 @@ public class GameOverController : MonoBehaviour
         Screen.lockCursor = false;
     }
 
-    public void RestartLevel()
+    public void PlayAgain()
     {
-        string sceneName = PlayerPrefs.GetString("lastLoadedScene");
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Level1");
     }
 
     public void MainMenu()
@@ -27,4 +26,8 @@ public class GameOverController : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }
