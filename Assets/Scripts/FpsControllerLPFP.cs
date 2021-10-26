@@ -43,7 +43,7 @@ namespace FPSControllerLPFP
 
 		[Header("Look Settings")]
         [Tooltip("Rotation speed of the fps controller."), SerializeField]
-        private float mouseSensitivity = 7f;
+        public float mouseSensitivity = 7f;
 
         [Tooltip("Approximately the amount of time it will take for the fps controller to reach maximum rotation speed."), SerializeField]
         private float rotationSmoothness = 0.05f;
@@ -118,7 +118,7 @@ namespace FPSControllerLPFP
             Debug.LogWarning(message);
             return Mathf.Clamp(rotationRestriction, min, max);
         }
-			
+
         /// Checks if the character is on the ground.
         private void OnCollisionStay()
         {
@@ -178,7 +178,7 @@ namespace FPSControllerLPFP
         {
             get { return input.RotateY * mouseSensitivity; }
         }
-			
+
         /// Clamps the rotation of the camera around the x axis
         /// between the <see cref="minVerticalAngle"/> and <see cref="maxVerticalAngle"/> values.
         private float RestrictVerticalRotation(float mouseY)
