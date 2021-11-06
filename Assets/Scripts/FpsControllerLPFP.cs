@@ -10,10 +10,11 @@ namespace FPSControllerLPFP
     [RequireComponent(typeof(AudioSource))]
     public class FpsControllerLPFP : MonoBehaviour
     {
+        //Storing balloon and skull score.
         public static int ballonScoreCounter = 29;
         public static int skullScoreCounter = 19;
 
-#pragma warning disable 649
+        #pragma warning disable 649
 		[Header("Arms")]
         [Tooltip("The transform component that holds the gun camera."), SerializeField]
         private Transform arms;
@@ -58,7 +59,7 @@ namespace FPSControllerLPFP
 
         [Tooltip("The names of the axes and buttons for Unity's Input Manager."), SerializeField]
         private FpsInput input;
-#pragma warning restore 649
+        #pragma warning restore 649
 
         private Rigidbody _rigidbody;
         private CapsuleCollider _collider;
@@ -72,7 +73,7 @@ namespace FPSControllerLPFP
         private readonly RaycastHit[] _groundCastResults = new RaycastHit[8];
         private readonly RaycastHit[] _wallCastResults = new RaycastHit[8];
 
-        /// Initializes the FpsController on start.
+        // Initializes the FpsController on start.
         private void Start()
         {
             _rigidbody = GetComponent<Rigidbody>();
@@ -88,7 +89,6 @@ namespace FPSControllerLPFP
             _velocityZ = new SmoothVelocity();
             Cursor.lockState = CursorLockMode.Locked;
             ValidateRotationRestriction();
-
         }
 			
         private Transform AssignCharactersCamera()
@@ -98,8 +98,6 @@ namespace FPSControllerLPFP
 			return arms;
         }
         
-        /// Clamps <see cref="minVerticalAngle"/> and <see cref="maxVerticalAngle"/> to valid values and
-        /// ensures that <see cref="minVerticalAngle"/> is less than <see cref="maxVerticalAngle"/>.
         private void ValidateRotationRestriction()
         {
             minVerticalAngle = ClampRotationRestriction(minVerticalAngle, -90, 90);
@@ -136,7 +134,7 @@ namespace FPSControllerLPFP
             _isGrounded = true;
         }
 			
-        /// Processes the character movement and the camera rotation every fixed framerate frame.
+        // Processes the character movement and the camera rotation every fixed framerate frame.
         private void FixedUpdate()
         {
             // FixedUpdate is used instead of Update because this code is dealing with physics and smoothing.
@@ -145,7 +143,7 @@ namespace FPSControllerLPFP
             _isGrounded = false;
         }
 			
-        /// Moves the camera to the character, processes jumping and plays sounds every frame.
+        // Moves the camera to the character, processes jumping and plays sounds every frame.
         private void Update()
         {
 			arms.position = transform.position + transform.TransformVector(armPosition);
@@ -167,20 +165,19 @@ namespace FPSControllerLPFP
 			arms.rotation = rotation;
         }
 			
-        /// Returns the target rotation of the camera around the y axis with no smoothing.
+        // Returns the target rotation of the camera around the y axis with no smoothing.
         private float RotationXRaw
         {
             get { return input.RotateX * mouseSensitivity; }
         }
 			
-        /// Returns the target rotation of the camera around the x axis with no smoothing.
+        // Returns the target rotation of the camera around the x axis with no smoothing.
         private float RotationYRaw
         {
             get { return input.RotateY * mouseSensitivity; }
         }
 
-        /// Clamps the rotation of the camera around the x axis
-        /// between the <see cref="minVerticalAngle"/> and <see cref="maxVerticalAngle"/> values.
+        // Clamps the rotation of the camera around the x axis
         private float RestrictVerticalRotation(float mouseY)
         {
 			var currentAngle = NormalizeAngle(arms.eulerAngles.x);
@@ -189,9 +186,7 @@ namespace FPSControllerLPFP
             return Mathf.Clamp(mouseY, minY + 0.01f, maxY - 0.01f);
         }
 			
-        /// Normalize an angle between -180 and 180 degrees.
-        /// <param name="angleDegrees">angle to normalize</param>
-        /// <returns>normalized angle</returns>
+        // Normalize an angle between -180 and 180 degrees.
         private static float NormalizeAngle(float angleDegrees)
         {
             while (angleDegrees > 180f)
@@ -275,7 +270,7 @@ namespace FPSControllerLPFP
             }
         }
 			
-        /// A helper for assistance with smoothing the camera rotation.
+        // A helper for assistance with smoothing the camera rotation.
         private class SmoothRotation
         {
             private float _current;
@@ -286,7 +281,7 @@ namespace FPSControllerLPFP
                 _current = startAngle;
             }
 				
-            /// Returns the smoothed rotation.
+            // Returns the smoothed rotation.
             public float Update(float target, float smoothTime)
             {
                 return _current = Mathf.SmoothDampAngle(_current, target, ref _currentVelocity, smoothTime);
@@ -298,13 +293,13 @@ namespace FPSControllerLPFP
             }
         }
 			
-        /// A helper for assistance with smoothing the movement.
+        // A helper for assistance with smoothing the movement.
         private class SmoothVelocity
         {
             private float _current;
             private float _currentVelocity;
 
-            /// Returns the smoothed velocity.
+            // Returns the smoothed velocity.
             public float Update(float target, float smoothTime)
             {
                 return _current = Mathf.SmoothDamp(_current, target, ref _currentVelocity, smoothTime);
@@ -316,7 +311,7 @@ namespace FPSControllerLPFP
             }
         }
 			
-        /// Input mappings
+        // Input mappings
         [Serializable]
         private class FpsInput
         {
@@ -344,37 +339,37 @@ namespace FPSControllerLPFP
              SerializeField]
             private string jump = "Jump";
 
-            /// Returns the value of the virtual axis mapped to rotate the camera around the y axis.
+            // Returns the value of the virtual axis mapped to rotate the camera around the y axis.
             public float RotateX
             {
                 get { return Input.GetAxisRaw(rotateX); }
             }
 				         
-            /// Returns the value of the virtual axis mapped to rotate the camera around the x axis.        
+            // Returns the value of the virtual axis mapped to rotate the camera around the x axis.        
             public float RotateY
             {
                 get { return Input.GetAxisRaw(rotateY); }
             }
 				        
-            /// Returns the value of the virtual axis mapped to move the character back and forth.        
+            // Returns the value of the virtual axis mapped to move the character back and forth.        
             public float Move
             {
                 get { return Input.GetAxisRaw(move); }
             }
 				       
-            /// Returns the value of the virtual axis mapped to move the character left and right.         
+            // Returns the value of the virtual axis mapped to move the character left and right.         
             public float Strafe
             {
                 get { return Input.GetAxisRaw(strafe); }
             }
 				    
-            /// Returns true while the virtual button mapped to run is held down.          
+            // Returns true while the virtual button mapped to run is held down.          
             public bool Run
             {
                 get { return Input.GetButton(run); }
             }
 				     
-            /// Returns true during the frame the user pressed down the virtual button mapped to jump.          
+            // Returns true during the frame the user pressed down the virtual button mapped to jump.          
             public bool Jump
             {
                 get { return Input.GetButtonDown(jump); }

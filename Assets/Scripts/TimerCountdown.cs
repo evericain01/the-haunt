@@ -23,6 +23,8 @@ public class TimerCountdown : MonoBehaviour
     public bool takingAway = false;
 
     public GameObject pausePanel;
+
+    //Flag for pausing
     private bool paused = false;
 
     public AudioSource backGroundAudio;
@@ -41,6 +43,7 @@ public class TimerCountdown : MonoBehaviour
 
     private void Update()
     {
+        // Updating the seconds.
         if (takingAway == false && secondsLeft > 0)
         {
             StartCoroutine(TimerTake());
@@ -66,9 +69,7 @@ public class TimerCountdown : MonoBehaviour
             countDownText.SetActive(false);
             reloadText.SetActive(false);
             pausePanel.SetActive(true);
-            /*
-                        Cursor.lockState = CursorLockMode.Locked;*/
-/*            Cursor.visible = false;*/
+
             backGroundAudio.Pause();
             Time.timeScale = 0;
             paused = true;
@@ -86,8 +87,6 @@ public class TimerCountdown : MonoBehaviour
             reloadText.SetActive(true);
             pausePanel.SetActive(false);
 
-            /*            Cursor.lockState = CursorLockMode.None;*/
-/*            Cursor.visible = true;*/
             backGroundAudio.Play();
             Time.timeScale = 1;
             paused = false;

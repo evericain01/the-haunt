@@ -19,6 +19,7 @@ public class ScoreTrackerLevel2 : MonoBehaviour
 
     private void Update()
     {
+        // Checks for when there are no more skulls left to prompt the End Screen.
         if (skullCounter == 0)
         {
             SceneManager.LoadScene("EndScreen");

@@ -6,22 +6,24 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 	//Animator component attached to weapon
 	public Animator anim;
-
 	public GameObject reloadText;
 
-	[Header("Gun Camera")]
 	//Main gun camera
+	[Header("Gun Camera")]
 	public Camera gunCamera;
 
+	//Crosshair
 	[Header("Crosshair")]
 	public Texture2D crosshair;
 
 	public Rect position;
 
+	//Gun Camera Options
 	[Header("Gun Camera Options")]
 	//How fast the camera field of view changes when aiming 
 	[Tooltip("How fast the camera field of view changes when aiming.")]
 	public float fovSpeed = 15.0f;
+
 	//Default camera field of view
 	[Tooltip("Default value for camera field of view (40 is recommended).")]
 	public float defaultFov = 40.0f;
@@ -38,27 +40,34 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	public bool scope2;
 	public Sprite scope2Texture;
 	public float scope2TextureSize = 0.01f;
+
 	//Scope 02 camera fov
 	[Range(5, 40)]
 	public float scope2AimFOV = 25;
 	[Space(10)]
+
 	//Toggle scope 03
 	public bool scope3;
 	public Sprite scope3Texture;
 	public float scope3TextureSize = 0.025f;
+
 	//Scope 03 camera fov
 	[Range(5, 40)]
 	public float scope3AimFOV = 20;
 	[Space(10)]
+
 	//Toggle iron sights
 	public bool ironSights;
 	public bool alwaysShowIronSights;
+
 	//Iron sights camera fov
 	[Range(5, 40)]
 	public float ironSightsAimFOV = 16;
 	[Space(10)]
+
 	//Toggle silencer
 	public bool silencer;
+
 	//Weapon attachments components
 	[System.Serializable]
 	public class weaponAttachmentRenderers 
@@ -84,6 +93,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	public weaponAttachmentRenderers WeaponAttachmentRenderers;
 
 	[Header("Weapon Sway")]
+
 	//Enables weapon sway
 	[Tooltip("Toggle weapon sway.")]
 	public bool weaponSway;
@@ -102,34 +112,36 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	//Eanbles auto reloading when out of ammo
 	[Tooltip("Enables auto reloading when out of ammo.")]
 	public bool autoReload;
+
 	//Delay between shooting last bullet and reloading
 	public float autoReloadDelay;
+
 	//Check if reloading
 	private bool isReloading;
-
-/*	//Holstering weapon
-	private bool hasBeenHolstered = false;
-	//If weapon is holstered
-	private bool holstered;*/
+	
 	//Check if running
 	private bool isRunning;
+
 	//Check if aiming
 	private bool isAiming;
+
 	//Check if walking
 	private bool isWalking;
+
 	//Check if inspecting weapon
 	private bool isInspecting;
 
 	//How much ammo is currently left
 	private int currentAmmo;
+
 	//Totalt amount of ammo
 	[Tooltip("How much ammo the weapon should have.")]
 	public int ammo;
+
 	//Check if out of ammo
 	private bool outOfAmmo;
 
 	public Transform bullet;
-
 
 	[Header("Bullet Settings")]
 	//Bullet
@@ -141,12 +153,8 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	[Tooltip("The bullet model inside the mag, not used for all weapons.")]
 	public SkinnedMeshRenderer bulletInMagRenderer;
 
-	[Header("Grenade Settings")]
-/*	public float grenadeSpawnDelay = 0.35f;*/
-
 	[Header("Muzzleflash Settings")]
 	public bool randomMuzzleflash = false;
-	//min should always bee 1
 	private int minRandomValue = 1;
 
 	[Range(2, 25)]
@@ -168,13 +176,13 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	[Header("Audio Source")]
 	//Main audio source
 	public AudioSource mainAudioSource;
+
 	//Audio source used for shoot sound
 	public AudioSource shootAudioSource;
 
 	[Header("UI Components")]
 	public Text timescaleText;
 	public Text currentAmmoText;
-	/*public Text totalAmmoText;*/
 
 	[System.Serializable]
 	public class prefabs
@@ -182,7 +190,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		[Header("Prefabs")]
 		public Transform bulletPrefab;
 		public Transform casingPrefab;
-		/*public Transform grenadePrefab;*/
 	}
 	public prefabs Prefabs;
 	
@@ -195,8 +202,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		public Transform casingSpawnPoint;
 		//Bullet prefab spawn from this point
 		public Transform bulletSpawnPoint;
-		//Grenade prefab spawn from this point
-		/*public Transform grenadeSpawnPoint;*/
 	}
 	public spawnpoints Spawnpoints;
 
@@ -308,10 +313,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 	private void Start () {
 		//Save the weapon name
 		storedWeaponName = weaponName;
-/*		//Get weapon name from string to text
-		currentWeaponText.text = weaponName;*/
-		//Set total ammo text from total ammo int
-/*		totalAmmoText.text = ammo.ToString();*/
 
 		//Weapon sway
 		initialSwayPosition = transform.localPosition;
@@ -346,9 +347,7 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 	private void Update () {
 
-
 		position = new Rect((Screen.width - crosshair.width) / 2, (Screen.height - crosshair.height) / 2, crosshair.width, crosshair.height);
-
 
 		//Aiming
 		//Toggle camera FOV when right click is held down
@@ -456,38 +455,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			randomMuzzleflashValue = Random.Range (minRandomValue, maxRandomValue);
 		}
 
-/*		//Timescale settings
-		//Change timescale to normal when 1 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha1)) 
-		{
-			Time.timeScale = 1.0f;
-			timescaleText.text = "1.0";
-		}
-		//Change timescale to 50% when 2 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha2)) 
-		{
-			Time.timeScale = 0.5f;
-			timescaleText.text = "0.5";
-		}
-		//Change timescale to 25% when 3 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha3)) 
-		{
-			Time.timeScale = 0.25f;
-			timescaleText.text = "0.25";
-		}
-		//Change timescale to 10% when 4 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha4)) 
-		{
-			Time.timeScale = 0.1f;
-			timescaleText.text = "0.1";
-		}
-		//Pause game when 5 key is pressed
-		if (Input.GetKeyDown (KeyCode.Alpha5)) 
-		{
-			Time.timeScale = 0.0f;
-			timescaleText.text = "0.0";
-		}*/
-
 		//Set current ammo text from ammo int
 		currentAmmoText.text = currentAmmo.ToString();
 
@@ -495,30 +462,9 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		//is currently playing
 		AnimationCheck();
 
-/*		//Play knife attack 1 animation when Q key is pressed
-		if (Input.GetKeyDown (KeyCode.Q) && !isInspecting) 
-		{
-			anim.Play ("Knife Attack 1", 0, 0f);
-		}
-		//Play knife attack 2 animation when F key is pressed
-		if (Input.GetKeyDown (KeyCode.F) && !isInspecting) 
-		{
-			anim.Play ("Knife Attack 2", 0, 0f);
-		}*/
-			
-		//Throw grenade when pressing G key
-/*		if (Input.GetKeyDown (KeyCode.G) && !isInspecting) 
-		{
-			StartCoroutine (GrenadeSpawnDelay ());
-			//Play grenade throw animation
-			anim.Play("GrenadeThrow", 0, 0.0f);
-		}*/
-
 		//If out of ammo
 		if (currentAmmo == 0) 
 		{
-/*			//Show out of ammo text
-			currentWeaponText.text = "OUT OF AMMO";*/
 			//Toggle bool
 			outOfAmmo = true;
 			//Auto reload if true
@@ -526,7 +472,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 			{
 				StartCoroutine (AutoReload ());
 			}
-
 
 			reloadText = GameObject.Find("ReloadText");
 			reloadText.GetComponent<Text>().text = "\"R\" to Reload";
@@ -538,14 +483,12 @@ public class HandgunScriptLPFP : MonoBehaviour {
 		} 
 		else 
 		{
-/*			//When ammo is full, show weapon name again
-			currentWeaponText.text = storedWeaponName.ToString ();*/
+
 			//Toggle bool
 			outOfAmmo = false;
 			//anim.SetBool ("Out Of Ammo", false);
 			anim.SetLayerWeight (1, 0.0f);
 		}
-
 		//Shooting 
 		if (Input.GetMouseButtonDown (0) && !outOfAmmo && !isReloading && !isInspecting && !isRunning) 
 		{
@@ -647,42 +590,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
         }
 
-		//Inspect weapon when pressing T key
-/*		if (Input.GetKeyDown (KeyCode.T)) 
-		{
-			anim.SetTrigger ("Inspect");
-		}*/
-
-		//Toggle weapon holster when pressing E key
-/*		if (Input.GetKeyDown (KeyCode.E) && !hasBeenHolstered) 
-		{
-			holstered = true;
-
-			mainAudioSource.clip = SoundClips.holsterSound;
-			mainAudioSource.Play();
-
-			hasBeenHolstered = true;
-		} 
-		else if (Input.GetKeyDown (KeyCode.E) && hasBeenHolstered) 
-		{
-			holstered = false;
-
-			mainAudioSource.clip = SoundClips.takeOutSound;
-			mainAudioSource.Play ();
-
-			hasBeenHolstered = false;
-		}
-
-		//Holster anim toggle
-		if (holstered == true) 
-		{
-			anim.SetBool ("Holster", true);
-		} 
-		else 
-		{
-			anim.SetBool ("Holster", false);
-		}*/
-
 		//Reload 
 		if (Input.GetKeyDown (KeyCode.R) && !isReloading && !isInspecting) 
 		{
@@ -737,15 +644,6 @@ public class HandgunScriptLPFP : MonoBehaviour {
 
 		hasStartedSliderBack = false;
 	}
-
-/*	private IEnumerator GrenadeSpawnDelay () {
-		//Wait for set amount of time before spawning grenade
-		yield return new WaitForSeconds (grenadeSpawnDelay);
-		//Spawn grenade prefab at spawnpoint
-		Instantiate(Prefabs.grenadePrefab, 
-			Spawnpoints.grenadeSpawnPoint.transform.position, 
-			Spawnpoints.grenadeSpawnPoint.transform.rotation);
-	}*/
 
 	private IEnumerator AutoReload () {
 

@@ -11,19 +11,21 @@ public class ScoreTrackerLevel1 : MonoBehaviour
 
     private void Start()
     {
+        // Starts the audio.
         backGroundAudio = GameObject.Find("Timer").GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-
+        // Checks for when there are no more balloons left to prompt the End Screen.
         if (balloonCounter == 0)
         {
             backGroundAudio.enabled = false;
             GameObject.Find("Timer").GetComponent<TimerCountdown>().secondsLeft = 30;
+
+            //Calls the SceneSwitcher method.
             GameObject.Find("SceneSwitcher").GetComponent<SceneSwitch>().SceneSwitcher();
         }
-
     }
 
     private void OnCollisionEnter(Collision collision)
