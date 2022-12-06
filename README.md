@@ -1,2 +1,5 @@
 # TheHaunt
-My Unity Game
+
+3D Target Shooter Game.
+
+Made with Unity/C#
